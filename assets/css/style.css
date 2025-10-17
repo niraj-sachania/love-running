@@ -14,7 +14,12 @@ body {
   font-family: Lato, sans-serif;
 }
 header {
-  background-color: lightcoral;
+  background-color: #fff;
+  padding: 0 1 rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
 }
 
 h1 {

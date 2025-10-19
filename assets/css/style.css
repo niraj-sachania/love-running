@@ -196,6 +196,15 @@ nav {
   line-height: 0; /* to remove the space between images that comes from images being inline elements with a line height like paragraphs */
 }
 
+/* Media query: large or landscape phone */
+@media screen and (min-width: 576px) {
+  /* Gallery */
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   nav {
@@ -253,12 +262,22 @@ nav {
     flex-direction: column;
     width: 100%;
   }
+
+  /* Gallery */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Large devices (laptops and desktops) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+
+  /* Gallery */
+  #photos {
+    column-count: 4;
   }
 }
 

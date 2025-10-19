@@ -186,6 +186,16 @@ nav {
   color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+  width: 100%;
+  line-height: 1em; /* to ensure alt text is readable in case of broken images */
+}
+
+#photos {
+  line-height: 0; /* to remove the space between images that comes from images being inline elements with a line height like paragraphs */
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   nav {

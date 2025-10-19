@@ -196,6 +196,49 @@ nav {
   line-height: 0; /* to remove the space between images that comes from images being inline elements with a line height like paragraphs */
 }
 
+/* Signup form */
+#signup {
+  background: url("../images/signup-image.webp") 75% / cover;
+  flex-grow: 1;
+  padding: 20px 10px;
+}
+
+#signup h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+#signup-form {
+  padding: 30px;
+  background-color: rgba(50, 50, 50, 0.6);
+  margin: 20px 10px;
+}
+
+.text-input {
+  margin: 5px 0 20px 0;
+  padding: 0 5px 0 5px;
+  height: 25px;
+  width: 100%;
+  background-color: transparent;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.join-button {
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  margin-top: 20px;
+  padding: 15px 32px;
+}
+
 /* Media query: large or landscape phone */
 @media screen and (min-width: 576px) {
   /* Gallery */
@@ -266,6 +309,22 @@ nav {
   /* Gallery */
   #photos {
     column-count: 3;
+  }
+
+  /* Signup form */
+
+  #signup .text-input:hover {
+    border-color: #f16c6b;
+  }
+
+  #signup-form {
+    margin: 150px auto auto 10%;
+    max-width: 400px;
+  }
+
+  .join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
   }
 }
 

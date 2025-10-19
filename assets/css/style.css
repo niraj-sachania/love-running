@@ -197,10 +197,41 @@ nav {
     right: 50px;
   }
 
-  /* Large devices (laptops and desktops) */
-  @media screen and (min-width: 992px) {
-    #menu a:hover {
-      border-bottom: 1px solid #3a3a3a;
-    }
+  /* Reasons */
+  #benefits {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+
+  #benefits-physical {
+    width: 75%;
+  }
+  #benefits-mental {
+    text-align: right;
+    align-items: right;
+    width: 75%;
+    align-self: flex-end;
+  }
+}
+
+/* Large devices (laptops and desktops) */
+@media screen and (min-width: 992px) {
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
+  /* Reasons */
+  #benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #benefits div {
+    width: 75%;
+  }
+  #benefits-mental {
+    order: 1;
+    text-align: right;
   }
 }
